@@ -10,7 +10,7 @@ module Legion
           MAX_EFFICIENCY_HISTORY = 200
 
           def initialize
-            @reserves          = {}
+            @reserves = {}
             @efficiency_history = []
           end
 

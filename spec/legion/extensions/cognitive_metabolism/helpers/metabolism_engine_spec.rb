@@ -156,9 +156,10 @@ RSpec.describe Legion::Extensions::CognitiveMetabolism::Helpers::MetabolismEngin
     end
 
     it 'returns all created reserves as hashes' do
-      engine.create_reserve
-      engine.create_reserve
-      expect(engine.all_reserves.size).to eq(3)
+      fresh_engine = described_class.new
+      fresh_engine.create_reserve
+      fresh_engine.create_reserve
+      expect(fresh_engine.all_reserves.size).to eq(2)
     end
   end
 

@@ -5,14 +5,14 @@ module Legion
     module CognitiveMetabolism
       module Helpers
         module Constants
-          MAX_ENERGY           = 1000.0
+          MAX_ENERGY = 1000.0
           RESTING_METABOLIC_RATE = 0.5
           RECOVERY_RATE        = 2.0
           EFFICIENCY_DECAY     = 0.01
 
           OPERATION_COSTS = {
-            perception:        5.0,
-            memory_retrieval:  8.0,
+            perception:       5.0,
+            memory_retrieval: 8.0,
             reasoning:        15.0,
             creativity:       20.0,
             decision:         12.0,
